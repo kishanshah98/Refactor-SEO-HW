@@ -1,11 +1,18 @@
+/* Size of boxes and distance between them for the entire page */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* Background color of the <body> of the page */
 body {
     background-color: #d9dcd6;
+}
+
+/* Font-size of all the small text in the <p> elements */
+p {
+    font-size: 16px;
 }
 
 .header {
@@ -15,12 +22,12 @@ body {
     color: #ffffff;
 }
 
-.header h1 {
+h1 {
     display: inline-block;
     font-size: 48px;
 }
 
-.header h1 .seo {
+.seo {
     color: #d9dcd6;
 }
 
@@ -46,10 +53,7 @@ a {
     text-decoration: none;
 }
 
-p {
-    font-size: 16px;
-}
-
+/* Details for the image under the "figure" element */
 .hero {
     height: 800px;
     width: 100%;
@@ -59,22 +63,26 @@ p {
     background-position: center;
 }
 
+/* Controls the image location of the first and third boxes of the <main> section */
 .float-left {
     float: left;
     margin-right: 25px;
 }
 
+/* Controls the image location of the second box of the <main> section */
 .float-right {
     float: right;
     margin-left: 25px;
 }
 
+/* Overall look of the "main" element on the site */
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
+/* This represents the overall style and edits in the section on the right side of the page */
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -86,22 +94,13 @@ p {
     background-color: #2589bd;
 }
 
-.benefit-lead {
+/* For the spacing in between each "aside" element class on the right side of the page */
+.benefit-lead, .benefit-brand, .benefit-cost {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-/* Sets the margin on the bottom to 10 px and centers the text for these headers in the "benefits" class */
+/* Sets the margin on the bottom of the aside elements to 10 px and centers the text for these headers in the "benefits" class */
 h3 {
     margin-bottom: 10px;
     text-align: center;
