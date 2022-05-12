@@ -15,7 +15,12 @@ p {
     font-size: 16px;
 }
 
-.header {
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
@@ -27,11 +32,11 @@ h1 {
     font-size: 48px;
 }
 
-.seo {
+header h1 span {
     color: #d9dcd6;
 }
 
-.header nav {
+header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -39,28 +44,45 @@ h1 {
     font-size: 20px;
 }
 
-.header nav ul {
+header nav ul {
     list-style-type: none;
 }
 
-.header nav ul li {
+header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
-a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
 /* Details for the image under the "figure" element */
-.hero {
+figure {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
     background-image: url("../images/digital-marketing-meeting.jpg");
     background-size: cover;
     background-position: center;
+}
+
+/* Overall look of the "main" element on the site */
+main {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/* The details for the boxes and text for the respective classes within the main element */
+main section {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+/* This makes all the images in the "content" class a max height of 200px */
+main section img {
+    max-height: 200px;
 }
 
 /* Controls the image location of the first and third boxes of the <main> section */
@@ -75,15 +97,14 @@ a {
     margin-left: 25px;
 }
 
-/* Overall look of the "main" element on the site */
-.content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
+/* Makes all the h2 headers in the main element this specific margin size on the bottom and font-size */
+h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
 }
 
 /* This represents the overall style and edits in the section on the right side of the page */
-.benefits {
+aside {
     margin-right: 20px;
     padding: 20px;
     clear: both;
@@ -95,7 +116,7 @@ a {
 }
 
 /* For the spacing in between each "aside" element class on the right side of the page */
-.benefit-lead, .benefit-brand, .benefit-cost {
+aside section {
     margin-bottom: 32px;
     color: #ffffff;
 }
@@ -107,35 +128,14 @@ h3 {
 }
 
 /* The images in the "Benefits" class all have the following details to make them spaced properly and have the correct size */
-.benefits img {
+aside img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-/* The details for the boxes and text for the respective classes within the main element */
-.search-engine-optimization, .online-reputation-management, .social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-/* This makes all the images in the "content" class a max height of 200px */
-.content img {
-    max-height: 200px;
-}
-
-/* Makes all the h2 headers in the main element this specific margin size on the bottom and font-size */
-h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
 /* Edits the font, text alignment, and box details of the footer */
-.footer {
+footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
